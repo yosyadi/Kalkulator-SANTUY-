@@ -2,6 +2,33 @@
 <html>
 <head>
 	<title>Calculator</title>
+	<!-- Progremer -->
+	<script>
+		function insert(num){
+			document.form.textview.value = document.form.textview.value + num;
+			// if(num == '^'){
+				
+			// }
+		}
+		function equal(){
+			var exp = document.form.textview.value;
+			if(exp){
+				document.form.textview.value = eval(exp);
+			}
+
+			else if{
+				document.form.textview.value = Math.pow(exp, document.form.textview.value);
+			}
+
+		}
+		function clean(){
+			document.form.textview.value = "";
+		}
+		function back(){
+			var exp = document.form.textview.value;
+			document.form.textview.value = exp.substring(0, exp.length-1);
+		}
+	</script>
 </head>
 <body>
 
