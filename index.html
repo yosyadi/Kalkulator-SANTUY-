@@ -4,6 +4,34 @@
 	<title>Kalkulator</title>
 </head>
 <body>
-
+	<center>
+	<table border="2" bgcolor="gray">
+		<tr><td>
+			<table>
+				<center><h4><b>Kalkulator</b></h4></center>
+				<tr>
+					<td><input type="number" id="angkaSatu"></td>
+				</tr>
+				<tr>
+					<td><input type="number" id="angkaDua"></td>
+				</tr>
+				<tr>
+					<td>
+						<select id="op">
+							<option value="+">+</option>
+							<option value="-">-</option>
+							<option value="x">x</option>
+							<option value="/">/</option>
+						</select>
+						<input type="submit" onclick="kalkulator()" value="=">
+					</td>
+				</tr>
+				<tr>
+					<td><input type="text" id="hasil"></td>
+				</tr>
+			</table>
+		</td></tr>
+	</table>
+	</center>
 </body>
 </html>
