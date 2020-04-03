@@ -1,9 +1,64 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<title>Kalkulator</title>
+	<script type="text/javascript">
+		function kalkulator(){
+			var angkaSatu = parseInt(document.getElementById("angkaSatu").value);
+			var angkaDua = parseInt(document.getElementById("angkaDua").value);
+			var op = document.getElementById("op").value;
+			var hasil = document.getElementById("hasil");
+			var total;
+			if(isNaN(angkaSatu) || isNaN(angkaDua)){
+				alert('isi form dengan angka!')
+			}
+			else{
+				if(op=="+"){
+					//progremer
+					
+				}
+				else if(op=="-"){
+					//frontend web
+				}
+				else if(op=="x"){
+					//ketua
+				}
+				else{
+					//frontend mobile
+				}
+			}
+			hasil.value = total;
+		}
+	</script>
 </head>
 <body>
-
+	<center>
+	<table border="2" bgcolor="gray">
+		<tr><td>
+			<table>
+				<center><h4><b>Kalkulator</b></h4></center>
+				<tr>
+					<td><input type="number" id="angkaSatu"></td>
+				</tr>
+				<tr>
+					<td><input type="number" id="angkaDua"></td>
+				</tr>
+				<tr>
+					<td>
+						<select id="op">
+							<option value="+">+</option>
+							<option value="-">-</option>
+							<option value="x">x</option>
+							<option value="/">/</option>
+						</select>
+						<input type="submit" onclick="kalkulator()" value="=">
+					</td>
+				</tr>
+				<tr>
+					<td><input type="text" id="hasil"></td>
+				</tr>
+			</table>
+		</td></tr>
+	</table>
+	</center>
 </body>
 </html>
