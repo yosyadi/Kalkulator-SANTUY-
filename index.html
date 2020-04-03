@@ -6,7 +6,9 @@
 		function tambah(a, b){
 			return a+b;
 		}
-		
+		function kurang(a, b){
+			return a-b;
+		}
 		function kalkulator(){
 			var angkaSatu = parseInt(document.getElementById("angkaSatu").value);
 			var angkaDua = parseInt(document.getElementById("angkaDua").value);
@@ -23,6 +25,7 @@
 				}
 				else if(op=="-"){
 					//frontend web
+					total = kurang(angkaSatu,angkaDua);
 				}
 				else if(op=="x"){
 					//ketua
