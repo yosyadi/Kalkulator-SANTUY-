@@ -3,8 +3,8 @@
 <head>
 	<title>Kalkulator</title>
 	<script type="text/javascript">
-		function kali(a, b){
-			return a*b;
+		function bagi(a, b){
+			return a/b;
 		}
 		function kalkulator(){
 			var angkaSatu = parseInt(document.getElementById("angkaSatu").value);
@@ -16,13 +16,13 @@
 				alert('isi form dengan angka!')
 			}
 			else{
-				if(op=="*"){
-					total = kali(angkaSatu,angkaDua);
-				}
-				else if(op=="-"){
-					
+				if(op=="/"){
+					total = bagi(angkaSatu,angkaDua);
 				}
 				else if(op=="+"){
+					
+				}
+				else if(op=="*"){
 					
 				}
 				else{
