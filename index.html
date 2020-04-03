@@ -12,6 +12,9 @@
 		function kali(a, b){
 			return a*b;
 		}
+		function bagi(a, b){
+			return a/b;
+		}
 		function kalkulator(){
 			var angkaSatu = parseInt(document.getElementById("angkaSatu").value);
 			var angkaDua = parseInt(document.getElementById("angkaDua").value);
@@ -36,6 +39,7 @@
 				}
 				else{
 					//frontend mobile
+					total = bagi(angkaSatu,angkaDua);
 				}
 			}
 			hasil.value = total;
