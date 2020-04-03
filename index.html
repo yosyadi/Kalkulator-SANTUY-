@@ -2,6 +2,11 @@
 <head>
 	<title>Kalkulator</title>
 	<script type="text/javascript">
+		//progremer
+		function tambah(a, b){
+			return a+b;
+		}
+		
 		function kalkulator(){
 			var angkaSatu = parseInt(document.getElementById("angkaSatu").value);
 			var angkaDua = parseInt(document.getElementById("angkaDua").value);
@@ -14,7 +19,7 @@
 			else{
 				if(op=="+"){
 					//progremer
-					
+					total = tambah(angkaSatu,angkaDua);
 				}
 				else if(op=="-"){
 					//frontend web
